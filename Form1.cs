@@ -395,18 +395,9 @@ namespace ChemicalСompoundRecognition
                 Accord.MachineLearning.DecisionTrees.DecisionTree tree = null;
                 try
                 {
-                    var ab = new int[][] {
-                        new int[] {0,1,2,3,4,5,6}, 
-                        new int[] {0,1,2,3,4,5,6}, 
-                        new int[] {0,1,2,3,4,5,6}, 
-                        new int[] {0,1,2,3,4,5,6}, 
-                        new int[] {0,1,2,3,4,5,6}, 
-                        new int[] {0,1,2,3,4,5,6}, 
-                        new int[] {0,1,2,3,4,5,6}
-                    };
-                    var cl = new int[] { 1, 2 , 1, 2, 2, 1 ,1};
-                    //tree = teacher.Learn(av, classes);
-                    tree = teacher.Learn(ab, cl);
+                    
+                    tree = teacher.Learn(av, classes);
+                  
                 }
                 catch (Exception ex)
                 {
