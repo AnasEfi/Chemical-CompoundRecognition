@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DecisionTree.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Accord" Version="3.8.0" />
+    <PackageReference Include="Accord.Controls" Version="3.8.0" />
+    <PackageReference Include="Accord.Extensions.Core" Version="3.0.1" />
+    <PackageReference Include="Accord.IO" Version="3.8.0" />
+    <PackageReference Include="Accord.MachineLearning" Version="3.8.0" />
+    <PackageReference Include="Accord.Math" Version="3.8.0" />
+    <PackageReference Include="Accord.Statistics" Version="3.8.0" />
+    <PackageReference Include="Accord.Vision" Version="3.8.0" />
+    <PackageReference Include="Aspose.Cells" Version="23.5.0" />
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+    <PackageReference Include="ZedGraph" Version="5.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Accord">
+      <HintPath>bin\Debug\net6.0-windows\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Extensions.Core">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Extensions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.IO">
+      <HintPath>bin\Debug\net6.0-windows\Accord.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.MachineLearning">
+      <HintPath>bin\Debug\net6.0-windows\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math.Core">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Math.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics">
+      <HintPath>bin\Debug\net6.0-windows\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells">
+      <HintPath>bin\Debug\net6.0-windows\Aspose.Cells.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
